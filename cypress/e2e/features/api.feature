@@ -1,4 +1,4 @@
-Feature: API Scenrios
+Feature: API Scenarios
   
   Scenario: Verify GET API response and extract title
     When I send a GET request to the API endpoint and should receive a successful response
