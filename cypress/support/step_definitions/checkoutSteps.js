@@ -10,7 +10,7 @@ Given("I open the Magento home page", () => {
 
 // ===== Checkout Flow =====
 When("I select a product and add it to the cart", () => {
-  HomePage.searchProduct("bag");
+  HomePage.searchProduct("Joust Duffle Bag");
   ProductPage.selectFirstProduct();
   ProductPage.addToCart();
 });
@@ -26,7 +26,7 @@ Then("I should see the order confirmation", () => {
 });
 
 Then("I save the order ID", () => {
-  cy.get(".order-number").then(order => {
+  cy.get(".checkout-success > :nth-child(1) > span").then(order => {
     cy.log("Order ID:", order.text());
     cy.writeFile("cypress/reports/orderId.txt", order.text());
   });

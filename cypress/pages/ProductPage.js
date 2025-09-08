@@ -1,6 +1,6 @@
 class ProductPage {
   selectFirstProduct() {
-    cy.get(".product-item-link").first().click();
+    cy.get(".product-image-photo").first().click();
   }
 
   addToCart() {
@@ -9,8 +9,9 @@ class ProductPage {
   }
 
   goToCart() {
-    cy.get(".showcart").click();
-    cy.contains("Proceed to Checkout").click();
+    cy.get('.message-success > div > a').should("be.visible").click();
+   // cy.get(".showcart").click();
+    cy.contains("Proceed to Checkout").should("be.visible").click();
   }
 }
 
