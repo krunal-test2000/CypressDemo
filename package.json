@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^15.1.0",
+    "esbuild": "^0.25.9"
+  }
+}
