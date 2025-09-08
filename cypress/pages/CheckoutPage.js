@@ -10,15 +10,14 @@ class CheckoutPage {
     cy.get('input[name="telephone"]').type("1234567890");
     cy.get('input[value="freeshipping_freeshipping"]').click();
 
-    
   }
 
   placeOrder() {
-       cy.get('button[data-role="opc-continue"]').click();
+    cy.get('button[data-role="opc-continue"]').click();
   }
 
   verifyOrderConfirmation() {
- cy.get(':nth-child(5) > div.primary > .action').should('be.visible').click();
+    cy.get(':nth-child(5) > div.primary > .action').should('be.visible').click();
     cy.contains("Thank you for your purchase!").should("be.visible");
   }
 }
