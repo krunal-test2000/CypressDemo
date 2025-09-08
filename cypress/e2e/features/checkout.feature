@@ -5,7 +5,8 @@ Feature: Magento Checkout Flow
     When I select a product and add it to the cart
     And I proceed to checkout and fill in the details
     Then I should see the order confirmation
-    And I save the order ID
+    And I save the order IDdf]
+    fdgfdg
 
   Scenario: Verify user can log in and log out successfully
     Given I open the Magento home page
