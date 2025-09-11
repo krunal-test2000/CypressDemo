@@ -47,24 +47,24 @@ npx cypress run --spec "cypress/e2e/login.spec.js"
 Here’s how your project is or might be organised:
 
 CypressDemo/
-│── package.json
-│── package-lock.json
-│── cypress.config.js
-│── .vscode/                   # Optional Neviagtion from feature to stepdefination
-│
+├── package.json
+├── package-lock.json
+├── cypress.config.js
+├── .vscode/                  # Optional: Navigation from feature to step definition
 ├── cypress/
-│    ├── e2e/                  # Your test/spec files
-│    │    ├── registration.spec.js
-│    │    ├── login.spec.js
-│    │    ├── product-search.spec.js
-│    │    └── checkout.spec.js
-│    │
-│    ├── fixtures/             # Test data (JSON or other formats)
-│    ├── support/              # Custom commands, setup/teardown, utilities
-│    └── screenshots/           # Automatically captured screenshot folder
-│    └── videos/                # Test run videos if enabled
-│
+│   ├── e2e/                  # Your test/spec files
+│   │   ├── registration.spec.js
+│   │   ├── login.spec.js
+│   │   ├── product-search.spec.js
+│   │   └── checkout.spec.js
+│   ├── fixtures/             # Test data (JSON or other formats)
+│   ├── support/              # Custom commands, setup/teardown, utilities
+│   │   ├── commands.js
+│   │   └── e2e.js
+│   ├── screenshots/          # Automatically captured screenshots
+│   └── videos/               # Test run videos if enabled
 └── node_modules/
+
 
 🔧 Configuration Notes
 
