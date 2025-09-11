@@ -30,11 +30,11 @@ Automated testing with **Cypress** — end-to-end tests for user flows, using BD
    yarn install
 2. **Open Cypress Test Runner**  
    
-   `npx cypress open`
+    `npx cypress open`
 
 3. **Run tests headlessly**
 
-  `npx cypress run`
+    `npx cypress run`
 
 
 4. **Run a specific spec file**
