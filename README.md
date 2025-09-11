@@ -46,6 +46,7 @@ npx cypress run --spec "cypress/e2e/login.spec.js"
 
 Here’s how your project is or might be organised:
 
+```
 CypressDemo/
 ├── package.json
 ├── package-lock.json
@@ -64,7 +65,7 @@ CypressDemo/
 │   ├── screenshots/          # Automatically captured screenshots
 │   └── videos/               # Test run videos if enabled
 └── node_modules/
-
+```
 
 🔧 Configuration Notes
 
