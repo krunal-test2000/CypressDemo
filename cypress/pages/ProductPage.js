@@ -10,8 +10,10 @@ class ProductPage {
 
   goToCart() {
     cy.get('.message-success > div > a').should("be.visible").click();
-   // cy.get(".showcart").click();
-    cy.contains("Proceed to Checkout").should("be.visible").click();
+    // cy.get(".showcart").click();
+    cy.wait(2000);
+    cy.get('button[data-role="proceed-to-checkout"]').should('be.visible').click();
+
   }
 }
 

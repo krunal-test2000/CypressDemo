@@ -4,7 +4,7 @@ class HomePage {
   }
 
   clickSignIn() {
-    cy.get('a[href*="customer/account/login"]').click();
+     cy.get('a[href*="/customer/account/login"]').first().click();
   }
 
   searchProduct(productName) {
