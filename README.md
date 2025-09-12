@@ -6,11 +6,25 @@ Automated testing with **Cypress** — end-to-end tests for user flows, using BD
 
 ## 📦 What’s Inside
 
-- Cypress test framework (JS / TypeScript)  
-- `cypress.config.js` for configuration  
-- Example specs / test files under `cypress/` folder  
-- `package.json` / `package-lock.json` for dependencies  
-- `.vscode/` settings (optional)  
+* Cypress Test Framework (JavaScript / TypeScript) for end-to-end testing
+
+* cypress.config.js – central configuration for Cypress tests
+
+* Example Specs / Test Files located under the cypress/ folder, including:
+
+* e2e/features/ – Cucumber .feature files
+
+* pages/ – Page Object Model (POM) files
+
+* fixtures/ – Test data (JSON, CSV, etc.)
+
+* support/ – Step definitions, custom commands, and global support scripts
+
+* package.json / package-lock.json – project dependencies and scripts
+
+* .vscode/ – optional VS Code settings for smoother navigation between feature files and step definitions
+
+* Reports, Screenshots & Videos automatically generated under cypress/reports/, cypress/screenshots/, and cypress/videos/
 
 ---
 
@@ -83,6 +97,12 @@ CypressDemo/
 
 ✅ Tests run in the browser(s) supported by Cypress (Chrome, Electron etc.)
 
-📋 One test spec per user flow makes tests easier to manage
+✅ One test spec per user flow makes tests easier to manage
+
+✅.vscode/ folder contains optional settings for navigation from feature files to step definitions.
+
+✅ Page objects are organized under cypress/pages/ for easier maintenance.
+
+✅ Use fixtures/ for storing reusable test data (JSON, etc.).
 
 
